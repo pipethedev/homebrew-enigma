@@ -9,7 +9,7 @@ class Enigma < Formula
 
   on_macos do
     url "https://github.com/pipethedev/enigma/releases/download/v0.121/enigma_0.121_darwin_all.tar.gz"
-    sha256 "5f0a0c91533f6946f16869c5289639adcd922abe1724770962394e392e55a22c"
+    sha256 "4f63a9c33ea07e379eef989fe094eec2fea8fd599d49f08cd5263adc08ebe631"
 
     def install
       bin.install "enigma"
@@ -19,7 +19,7 @@ class Enigma < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/pipethedev/enigma/releases/download/v0.121/enigma_0.121_linux_arm64.tar.gz"
-      sha256 "c6524fb1805869584266895150d2e77ca4e191000bcbc5b67b48ef59b6fceaa3"
+      sha256 "2d9ddf33e0a339a344d880b6cd4127c1dc82ed4e4851edc1be33418ca454f416"
 
       def install
         bin.install "enigma"
@@ -27,7 +27,7 @@ class Enigma < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/pipethedev/enigma/releases/download/v0.121/enigma_0.121_linux_amd64.tar.gz"
-      sha256 "25addf2bd7f2ec8f6e67d5d5370373c05c5bc3e0472111ee6f894666bc4046df"
+      sha256 "4066ee48068ce625e40e7c91df9b34e70d21d373424aa33e74ab144b01b00f53"
 
       def install
         bin.install "enigma"
